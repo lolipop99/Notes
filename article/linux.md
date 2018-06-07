@@ -15,6 +15,9 @@ lsb_release -a
 adduser `username`
 passwd  `password`
 
+# 上传文件
+rz -bye
+
 
 # 修改文件内容
 # 解决ssh长时连接 /etc/ssh/sshd_config
