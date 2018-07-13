@@ -11,6 +11,8 @@
 
 # docker常用命令
 ```
+systemctl enable docker #设置随机启动docker
+
 docker ps #列出容器
 
 docker ps -a
