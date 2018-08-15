@@ -59,4 +59,4 @@ crontab -e #自动备份
 2. 关闭注册窗口，用管理员账号后台设置`sign-up`
 3. [测试邮箱是否成功](https://www.cnblogs.com/wanglan/p/8759356.html)
 > gitlab-rails console
-> Notify.test_email('zql@digitalgd.com.cn', 'Message Subject', 'Message Body').deliver_now
+> Notify.test_email('.com.cn', 'Message Subject', 'Message Body').deliver_now
