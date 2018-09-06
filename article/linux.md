@@ -43,7 +43,7 @@ kill -9 PID #关掉某个进程
 
 systemctl start firewalld #启动防火墙
 firewall-cmd --zone=public --add-port=36000/tcp --permanent #防火墙添加端口
-
+/sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT 开启centos端口
 
 service sshd reload #重新加载ssd配置，让配置生效
 service sshd restart #重启ssh
