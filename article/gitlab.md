@@ -16,8 +16,8 @@ sudo EXTERNAL_URL="http://git.digitalgd.com.cn/" yum -y install gitlab-ee
 # 安装步骤
 * [下载相关版本包：el7 => centos7](https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/7/gitlab-ce-8.14.0-ce.0.el7.x86_64.rpm)
 * rpm执行安装：rpm -ivh gitlab-ce-8.8.5-ce.1.el6.x86_64.rpm
-* docker安装：
-docker pull gitlab/gitlab-ce:8.14.0-ce.0
+* docker安装：  
+docker pull gitlab/gitlab-ce:8.14.0-ce.0  
 sudo docker run --detach \
     --hostname git.digitalgd.com.cn \
     --publish 445:443 --publish 465:465 --publish 10080:80 --publish 10086:22 \
