@@ -35,6 +35,8 @@ ps -aux|grep 服务名
 service iptables stop
 setenforce 0
 
+
+# https://blog.csdn.net/qq_24232123/article/details/79781527
 netstat -nltp #查看启动了哪些端口
 
 tail -100f /APP/web/logs/log.log #实时查看某个服务的日志
