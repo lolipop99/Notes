@@ -52,6 +52,7 @@ crontab -e #自动备份
 * nginx、gitlab-ctl status服务没问题，有可能是`防火墙端口`、`服务器端口限制`等问题
 * 修改内部ssh端口限制[gitlab_shell_ssh_port](https://www.cnblogs.com/xuezhigu/p/6555895.html)
 * [git clone报ssh ip changed](https://blog.csdn.net/wangjunjun2008/article/details/37870849)
+* [解决错误web登录问题](https://gitlab.com/gitlab-org/omnibus-gitlab/issues/561)
 
 
 # gitlab设置
