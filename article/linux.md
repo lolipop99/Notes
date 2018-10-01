@@ -69,5 +69,19 @@ yum install nginx
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 ```
 
+## 文件属性
+```
+r:read就是读权限     --数字4表示
+w:write就是写权限    --数字2表示
+x:excute就是执行权限 --数字1表示
+
+读、写、运行三项权限可以用数字表示，就是r=4,w=2,x=1。所以，-rw-r--r--用数字表示成644。
+这里总共会有10个“-”，第一个表示文件类型，如该文件是文件(-表示)，文件夹(d表示),连接文件(l表示)，后面9个按照三个一组分。
+如:rwxrwx--- 770
+表示此文件(文件夹)的拥有着和同组用户有读写及执行权限，其他用户组没任何权限。
+也就是前面三个表示所有者权限，中间三个表示同组用户权限，最后一组表示其他用户权限。
+注意：以上的其他用户，不包括root这个super user。
+```
+
 # 查看linux用户文件配置
 [root@centos65 ~]# cat /etc/passwd
