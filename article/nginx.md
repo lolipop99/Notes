@@ -30,7 +30,7 @@ upstream gogs_pool{
 
 server {
     listen       80;
-    server_name  gitlab.digitalgd.com.cn;
+    server_name  gitlab.xxx.com;
     access_log /var/log/httpd/gitlab-access.log;
     error_log /var/log/httpd/gitlab-error.log;
     
@@ -42,7 +42,7 @@ server {
 
 server {
     listen       80;
-    server_name  git.digitalgd.com.cn;
+    server_name  git.xxx.com;
     access_log /var/log/httpd/gogs-access.log;
     error_log /var/log/httpd/gogs-error.log;
     
