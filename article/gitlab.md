@@ -10,7 +10,7 @@
 # 卸载 sudo gitlab-ctl uninstall
  
 
-sudo EXTERNAL_URL="http://git.digitalgd.com.cn/" yum -y install gitlab-ee
+sudo EXTERNAL_URL="http://git.xxx.com/" yum -y install gitlab-ee
 
 
 # 安装步骤
@@ -19,7 +19,7 @@ sudo EXTERNAL_URL="http://git.digitalgd.com.cn/" yum -y install gitlab-ee
 * docker安装：  
 docker pull gitlab/gitlab-ce:8.14.0-ce.0  
 sudo docker run --detach \
-    --hostname git.digitalgd.com.cn \
+    --hostname git.xxx.com \
     --publish 445:443 --publish 465:465 --publish 10080:80 --publish 10086:22 \
     --name gitlab \
     --restart always \
@@ -60,4 +60,4 @@ crontab -e #自动备份
 2. 关闭注册窗口，用管理员账号后台设置`sign-up`
 3. [测试邮箱是否成功](https://www.cnblogs.com/wanglan/p/8759356.html)
 > gitlab-rails console
-> Notify.test_email('.com.cn', 'Message Subject', 'Message Body').deliver_now
+> Notify.test_email('xxx@xxx.com', 'Message Subject', 'Message Body').deliver_now
