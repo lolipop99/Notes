@@ -14,3 +14,4 @@ git rebase origin   #rebase到orgin
 git rebase --continue   #解决rebase冲突后继续rebase
 git rebase --abort  #回退到rebase开始前状态
 ```
+# [git单一克隆、深度克隆、全克隆区别](https://blog.csdn.net/shrimpcolo/article/details/80164741)
